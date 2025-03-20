@@ -1,4 +1,3 @@
-
 // Main JavaScript for the website
 
 // Global variables
@@ -46,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
       initContactPage();
       break;
   }
+  applyTranslations();
 });
 
 // Helper function to get current page name
@@ -1048,3 +1048,16 @@ function debounce(func, wait) {
     timeout = setTimeout(() => func.apply(this, args), wait);
   };
 }
+
+function applyTranslations() {
+  document.querySelectorAll('[data-key]').forEach(element => {
+    const key = element.getAttribute('data-key');
+    const translation = translations[key][currentLanguage];
+    if (translation) {
+      element.textContent = translation;
+    }
+  });
+}
+
+// Llama a applyTranslations() después de cargar el contenido de la página
+document.addEventListener('DOMContentLoaded', applyTranslations);

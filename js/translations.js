@@ -219,4 +219,30 @@ const translations = {
     es: 'Inglés',
     en: 'English',
   },
+  
+  
+  'links.link1.description': {
+    es: 'Información y análisis sobre la realidad internacional.',
+    en: 'Information and analysis on international affairs.'
+  },
+  'links.link1.button': {
+    es: 'Visitar',
+    en: 'Visit'
+  },
+  'links.link2.description': {
+    es: 'Ligeras anotaciones que hace Gustavo Ng de asuntos que piensa o encuentra escritos en libros mientras va en colectivo y luego comenta con tal o cual persona.',
+    en: 'Gustavo Ng makes brief notes on things he thinks about or finds written in books while riding the bus, which he then discusses with this or that person.'
+  },
+  'links.link2.button': {
+    es: 'Visitar',
+    en: 'Visit'
+  },
+  'links.link3.description': {
+    es: 'Plataforma de comunicación periodística y cultural entre Argentina, América Latina y China.',
+    en: 'Journalistic and cultural communication platform between Argentina, Latin America, and China.'
+  },
+  'links.link3.button': {
+    es: 'Visitar',
+    en: 'Visit'
+  },
 };
