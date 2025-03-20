@@ -407,7 +407,7 @@ header.scrolled {
   .hero {
     flex-direction: column;
     justify-content: center;
-    
+
   }
   .hero-intro {
     font-size: 0.85rem;
@@ -719,6 +719,7 @@ header.scrolled {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   line-clamp: 2;
   overflow: hidden;
 }
@@ -1784,9 +1785,6 @@ body.no-scroll {
   
   .hero-subtitle {
     font-size: 3rem;
-  }
-  .hero {
-    
   }
 }
 
