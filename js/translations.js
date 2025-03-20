@@ -1,4 +1,3 @@
-
 // Translations for the website
 const translations = {
   // Navegación
@@ -43,6 +42,22 @@ const translations = {
   'home.intro': {
     es: 'Explorando culturas, compartiendo historias.',
     en: 'Exploring cultures, sharing stories.',
+  },
+  'home.about': {
+    es: 'Sobre mí',
+    en: 'About Me'
+  },
+  'home.about.text': {
+    es: 'Soy Gustavo Ng, periodista, antropólogo y escritor argentino. Mi pasión por explorar culturas y compartir historias me ha llevado a escribir numerosos artículos y libros sobre la sociedad y la cultura. Acompáñame en este viaje de descubrimiento y conocimiento.',
+    en: 'I am Gustavo Ng, an Argentine journalist, anthropologist, and writer. My passion for exploring cultures and sharing stories has led me to write numerous articles and books about society and culture. Join me on this journey of discovery and knowledge.'
+  },
+  'home.about.button': {
+    es: 'Leer más',
+    en: 'Read more'
+  },
+  'home.links': {
+    es: 'Links',
+    en: 'Links'
   },
   'home.latest': {
     es: 'Artículos Periodísticos ',

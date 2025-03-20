@@ -268,7 +268,17 @@ function showToast(message, duration = 3000) {
 // ------------------------------------------
 // Page-specific functions
 // ------------------------------------------
+function getFeaturedPress() {
+  return pressData
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4); // Cambiar a 4 artículos
+}
 
+function getFeaturedArticles() {
+  return articlesData
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 3); // Mantener 3 artículos
+}
 // Home Page
 function initHomePage() {
   loadFeaturedContent();
@@ -293,13 +303,7 @@ function loadFeaturedContent() {
           <span class="article-date">${formatDate(article.date, currentLanguage)}</span>
           <h3 class="article-title">${currentLanguage === 'es' ? article.title : article.titleEn}</h3>
           <p class="article-excerpt">${currentLanguage === 'es' ? article.excerpt : article.excerptEn}</p>
-          <a href="articulos.html?slug=${article.slug}" class="article-link">
-            <span>${translations['articles.readmore'][currentLanguage]}</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
+          
         </div>
       `;
       articlesContainer.appendChild(articleElement);
