@@ -46,6 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
       break;
   }
   applyTranslations();
+  
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const languageButton = document.querySelector('.language-button');
+  const languageDropdown = document.querySelector('.language-dropdown');
+
+  menuToggle.addEventListener('click', function() {
+    mobileNav.classList.toggle('show');
+  });
+
+  languageButton.addEventListener('click', function() {
+    languageDropdown.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
+      languageDropdown.classList.remove('show');
+    }
+  });
 });
 
 // Helper function to get current page name
