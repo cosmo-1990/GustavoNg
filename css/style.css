@@ -117,7 +117,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -352,27 +352,25 @@ header.scrolled {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 4rem 0;
+  justify-content: space-between;
+  padding: 0 0;
   text-align: center;
 }
 .hero-image {
   position: relative;
-  width: 50%;
-  top: 0;
+  width: 60%;
+  top: 20;
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   z-index: -1;
-  
+  flex-direction: column-reverse;
   
 }
 
 .hero-content {
   max-width: 1200px;
+  padding: 0 1rem;
   
 }
 
@@ -398,13 +396,21 @@ header.scrolled {
   animation: fadeInUp 1s ease 0.6s forwards;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hero-title {
-    font-size: 6.5rem;
+    font-size: 3.5rem;
   }
   
   .hero-subtitle {
-    font-size: 3rem;
+    font-size: 1.5rem;
+  }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .hero-intro {
+    font-size: 0.85rem;
   }
 }
 
@@ -876,6 +882,7 @@ header.scrolled {
 .social-links {
   display: flex;
   gap: 1rem;
+  justify-content: end;
 }
 
 .social-link {
@@ -1777,6 +1784,9 @@ body.no-scroll {
   
   .hero-subtitle {
     font-size: 3rem;
+  }
+  .hero {
+    
   }
 }
 
